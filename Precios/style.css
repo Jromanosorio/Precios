@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: lightcyan;
+}
 
 .fondo{
-    width: 100%;
-    height: 100vh;
-    background-color: lightcyan;
+    margin-top: 30px;
     position: relative;
     font-size: 1.5rem;
     text-align: center;
@@ -18,6 +19,11 @@
 hr{
     width: 70%;
     margin: 0 45px;
+}
+
+h2:first-child{
+    text-align: center;
+    margin-top: 50px;
 }
 
 h2{
@@ -79,4 +85,14 @@ h4{
 .card:hover .btn{
     border: solid 1px white;
     color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .fondo {
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 5px 0;
+    }
 }
